@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabicFlow</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="preload" href="/static/js/script.js" as="script">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="container">
+            <div class="flex-container">
+                <div class="typewriter">
+                    <div class="slide"><i></i></div>
+                    <div class="paper"></div>
+                    <div class="keyboard"></div>
+                </div>
+        
+                <div class="title">
+                    <span style="--i:1;">Next </span>
+                    <span style="--i:2;">Words </span>
+                    <span style="--i:3;">Prediction </span>
+                </div>
+            </div>
+        </div>
+       
+    
+        <div class="container">
+            <p class="animated-text">
+                Welcome to ArabicFlow! Experience seamless Arabic text prediction powered by cutting-edge NLP.<br>
+                Enhance your writing with precise next-word suggestions tailored for Arabic.<br>
+                Join us and revolutionize your Arabic language experience!
+            </p>
+        </div>
+        
+            <div class="input-container">
+                <input type="text" autocomplete="off" name="text" class="input"  id="inputWord" placeholder="Enter a word">
+                <button id="predictButton" class="button">Predict</button>
+                <textarea id="inputTextArea" ></textarea>
+            </div>
+       
+
+    </div>
+</body>
+</html>
